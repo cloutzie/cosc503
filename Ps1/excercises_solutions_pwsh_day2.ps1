@@ -1,36 +1,5 @@
 # DAY 2 POWERSHELL
 
-# Practical Exercise: Reverse Arrays
-
-    # Create an array containing a range with a random starting and stopping point. The starting point will be a random number from -10 through 0. The ending point will be a random number from 1 through 20.
-        $start=Get-Random -Minimum -10 -Maximum 0
-        $end=Get-Random -Minimum -1 -Maximum 20
-        $array=$start..$end
-    # Create a variable that contains the contents of the array in reverse
-        $revarray=[array]::Reverse($array)
-
-
-# Practical Exercise: Arrays & Hash Tables
-    
-    # Create two empty hash tables with the following names:
-        $employee1=@{}
-        $employee2=@{}
-    # Using the following table of key-value pairs, apply each key-value to the empty hash tables.
-        $employee1 = @{ First="Mary" ; Last="Hopper" ; ID="001" ; Job="Software Developer" }
-        $employee2 = @{ First="John" ; Last="Willams" ; ID="002" ; Job="Web Developer" }
-    # Now add a new key called Username which holds a contraction of the employee’s first initial then last name then ID. (i.e. mhopper001).
-        $employee1.Username=$employee1["First"].substring(0,1)+$employee1["Last"]+$employee1["ID"]
-        $employee2.Username=$employee2["First"].substring(0,1)+$employee2["Last"]+$employee2["ID"]
-    # Mary got promoted to "Software Lead" so the job key for Mary needs to be changed to "Software Lead"
-        $employee1.Job="Software Lead"
-    # Create a new hash table called "employee3" that contains the following values with the respective keys.
-        $employee3 = @{ First="Alex" ; Last="Moran" ; ID="003" ; Job="Software Developer" }
-    # Add a new key called "Status" that holds the values:
-        $employee1.Status="Management"
-        $employee2.Status="Intermediate"
-        $employee3.Status="Entry Level"
-
-
 # Practical Exercise: The Pipeline
 
     # Display the start time of the earliest and latest running processes
