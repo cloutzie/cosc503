@@ -6,6 +6,6 @@
 >- [VMs](https://vta.cybbh.space/horizon/project/instances/?action=row_update&table=instances&obj_id=c6748ee3-2535-41ec-9094-b6fcb22f5f9e)  
 
 ### Commands
-> Remove Banners
-  : xfreerdp /u:<username> /v:<ip> -dynamic-resolution +glyph-cache +clipboard
+Remove Banners
+: xfreerdp /u:<username> /v:<ip> -dynamic-resolution +glyph-cache +clipboard
 
