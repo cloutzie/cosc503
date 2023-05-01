@@ -9,3 +9,4 @@
 >- Remove Banners  
 >   xfreerdp /u:<username> /v:<ip> -dynamic-resolution +glyph-cache +clipboard
 
+https://docs.google.com/spreadsheets/d/1Z9t2yXsuhA55d47fpamOPe-Ok-Y1Vxfn8f0QjrfAuxk/edit#gid=1341217126
