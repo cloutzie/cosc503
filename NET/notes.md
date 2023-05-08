@@ -7,6 +7,7 @@
 
 ### QOL Commands
 >- Remove Banners  
+>   kill -9 $(ps -elf | egrep -v grep | egrep banner | awk '{print $4}')
 >   xfreerdp /u:<username> /v:<ip> -dynamic-resolution +glyph-cache +clipboard
   
 ### IPs
