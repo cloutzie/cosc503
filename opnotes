@@ -1,0 +1,50 @@
+
+CTFD Information
+____
+
+10.50.20.250:8000
+
+WAZA-503-M
+zazapassword
+________________________________________________________________
+
+Box Info
+____
+
+LinOps
+ssh -X student@10.50.37.159
+password
+____
+
+GreyHost (Pivot)
+ssh -X student@10.50.21.3
+password (New)
+j57j4hHOCjTi9Fe (Old)
+________________________________________________________________
+
+Helpful Commands
+____
+
+Remove Banners
+kill -9 $(ps -elf | egrep -v grep | egrep banner | awk '{print $4}')
+____
+
+RDP Session
+xfreerdp /u:<username> /v:<ip> -dynamic-resolution +glyph-cache +clipboard
+____
+
+Ping Sweep
+for i in {1..254} ;do (ping -c 1 <IP>.$i 2>/dev/null | grep "bytes from" &) ;done
+
+________________________________________________________________
+
+SQL Injections
+____
+
+Get Database Schema
+union select table_schema,table_name,column_name from information_schema.columns
+
+
+
+
+
